@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "inter";
+        background-color: hsl(0, 0%, 12%);
+      }
+
+      .container {
+        max-width: 45rem;
+        text-align: center;
+        margin: 5rem auto;
+        padding: 4rem;
+      }
+
+      .article {
+        background-color: hsl(0, 0%, 18%);
+        padding: 4rem 0 2rem;
+        border-radius: 1.5rem;
+      }
+
+      .profile-img {
+        width: 30%;
+        height: auto;
+        display: inline-block;
+        border-radius: 100%;
+        margin-bottom: 1.6rem;
+      }
+
+      .author-name {
+        margin-bottom: 0.4rem;
+        font-size: 2.4rem;
+        color: hsl(0, 0%, 100%);
+      }
+
+      .location {
+        margin-bottom: 2.4rem;
+        font-size: 1.4rem;
+        color: hsl(75, 94%, 57%);
+      }
+
+      .hobbies {
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        color: hsl(0, 0%, 100%);
+      }
+
+      .btns {
+        display: grid;
+        justify-content: center;
+        row-gap: 1.4rem;
+        margin-bottom: 1.6rem;
+      }
+
+      .btn:link,
+      .btn:visited {
+        text-decoration: none;
+        padding: 1rem 7rem;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 30%);
+        font-size: 1.6rem;
+        cursor: pointer;
+        border-radius: 1rem;
+        font-weight: 500;
+      }
+
+      .btn:hover,
+      .btn:active {
+        color: hsl(0, 0%, 20%);
+        background-color: hsl(75, 94%, 57%);
+      }
+
+      .attribution {
+        font-size: 1.2rem;
+        color: hsl(0, 0%, 50%);
+        text-align: center;
+      }
+
+      .attribution a:link,
+      .attribution a:visited {
+        color: hsl(0, 0%, 50%);
+        text-decoration: none;
+      }
+
+      .attribution a:hover,
+      .attribution a:active {
+        color: hsl(75, 94%, 57%);
+      }
+
+      /* ************************** */
+      /* RESPONSIVE */
+      /* ************************** */
+
+      @media (max-width: 26.25em) {
+        .author-name {
+          font-size: 1.6rem;
+        }
+
+        .location {
+          font-size: 0.9rem;
+        }
+
+        .hobbies {
+          font-size: 0.9rem;
+        }
+
+        .btn:link,
+        .btn:visited {
+          text-decoration: none;
+          padding: 0.6rem 4rem;
+          color: hsl(0, 0%, 100%);
+          background-color: hsl(0, 0%, 30%);
+          font-size: 1rem;
+          cursor: pointer;
+          border-radius: 0.5rem;
+          font-weight: 500;
+        }
+
+        .attribution {
+          font-size: 0.8rem;
+          color: hsl(0, 0%, 50%);
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="article">
+        <img
+          src="assets/images/avatar-jessica.jpeg"
+          alt="An image of Jessica Randall"
+          class="profile-img"
+        />
+        <h1 class="author-name">Jessica Randall</h1>
+        <p class="location">London, United Kingdom</p>
+        <p class="hobbies">"Front-end developer and avid reader."</p>
+        <div class="btns">
+          <a href="#" class="btn">GitHub</a>
+          <a href="#" class="btn">Frontend Mentor</a>
+          <a href="#" class="btn">LinkedIn</a>
+          <a href="#" class="btn">Twitter</a>
+          <a href="#" class="btn">Instagram</a>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">delight</a>.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
